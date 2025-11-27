@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className="w-full min-h-screen bg-slate-500 flex justify-center p-6">
-      <div className="w-[500px] space-y-4">
+      <div className="w-full max-w-[500px] space-y-4">
         <Title>Gerenciador de Tarefas</Title>
         <AddTask onAddTaskSubmit={onAddTaskSubmit} />
         <Tasks tasks={tasks} onTaskClick={onTaskClick} onDeleteTaskClick={onDeleteTaskClick}/>
@@ -59,5 +59,4 @@ function App() {
     </div>
   )
 }
-
 export default App;
